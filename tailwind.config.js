@@ -11,6 +11,7 @@ export default {
         "Dark-desaturated-cyan": "hsl(167, 40%, 24%)", //  (graphic design text)
         "Dark-blue": "hsl(198, 62%, 26%)", // (photography text)
         "Dark-moderate-cyan": "hsl(168, 34%, 41%)", //(footer)
+        "light-blue": "#3DBFFF",
 
         /* Neutral */
 

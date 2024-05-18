@@ -13,11 +13,11 @@ export const NavBar = () => {
       {/* flex */}
       <ul
         className={`${
-          menuIsClicked ? "" : "hidden"
-        }   text-Very-dark-desaturated-blue bg-White w-80 absolute left-0 right-0 mx-auto top-[106px] flex flex-col gap-8 items-center p-8 after:content-[""] after:absolute after:top-[-24px] after:right-0 after:border-[13px] after:border-t-transparent after:border-l-transparent after:border-b-white after:border-r-white `}
+          menuIsClicked
+            ? `bg-White w-80 absolute left-0 right-0 mx-auto top-[106px] flex flex-col gap-8 items-center p-8 after:content-[""] after:absolute after:top-[-24px] after:right-0 after:border-[13px] after:border-t-transparent after:border-l-transparent after:border-b-white after:border-r-white  `
+            : "hidden"
+        } text-Very-dark-desaturated-blue sm:flex gap-8 sm:items-center  sm:text-white sm:text-sm lg:text-lg z-10`}
       >
-        {" "}
-        {/* sm:flex gap-8 */}
         <li className="cursor-pointer">
           <a href="#">About</a>
         </li>
@@ -27,11 +27,11 @@ export const NavBar = () => {
         <li className="cursor-pointer">
           <a href="#">Projects</a>
         </li>
-        <li className="cursor-pointer bg-Yellow py-2 px-4 rounded-full uppercase font-bold font-Fraunces">
+        <li className="cursor-pointer bg-Yellow sm:bg-white py-2 px-4 rounded-full uppercase font-bold font-Fraunces sm:text-Very-dark-desaturated-blue ">
           <a href="#">Contact</a>
         </li>
       </ul>
-      <div className="sm:hidden">
+      <div className="cursor-pointer sm:hidden">
         <img onClick={handleClickMenu} src={iconMenu} alt="Menu icon" />
       </div>
     </nav>
