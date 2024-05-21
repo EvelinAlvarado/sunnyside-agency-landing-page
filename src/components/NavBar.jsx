@@ -18,16 +18,16 @@ export const NavBar = () => {
             : "hidden"
         } text-Very-dark-desaturated-blue sm:flex gap-8 sm:items-center  sm:text-white sm:text-sm lg:text-lg z-10`}
       >
-        <li className="cursor-pointer">
+        <li className="cursor-pointer hover:text-Dark-desaturated-cyan font-semibold">
           <a href="#">About</a>
         </li>
-        <li className="cursor-pointer">
+        <li className="cursor-pointer hover:text-Dark-desaturated-cyan font-semibold">
           <a href="#">Services</a>
         </li>
-        <li className="cursor-pointer">
+        <li className="cursor-pointer hover:text-Dark-desaturated-cyan font-semibold">
           <a href="#">Projects</a>
         </li>
-        <li className="cursor-pointer bg-Yellow sm:bg-white py-2 px-4 rounded-full uppercase font-bold font-Fraunces sm:text-Very-dark-desaturated-blue ">
+        <li className="cursor-pointer bg-Yellow sm:bg-white py-2 px-4 rounded-full uppercase font-bold font-Fraunces sm:text-Very-dark-desaturated-blue hover:text-[20px]">
           <a href="#">Contact</a>
         </li>
       </ul>
